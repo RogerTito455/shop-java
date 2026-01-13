@@ -140,10 +140,8 @@ public class Shop {
         Product product = findProduct(name);
 
         if (product != null) {
-            // ask for stock
             System.out.print("Seleccione la cantidad a a\u00f1adir: ");
             int stock = scanner.nextInt();
-            // update stock product
             product.setStock(product.getStock() + stock);
             System.out.println("El stock del producto " + name + " ha sido actualizado a " + product.getStock());
 
