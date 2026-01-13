@@ -187,12 +187,10 @@ public class Shop {
      * make a sale of products to a client
      */
     public void sale() {
-        // ask for client name
         Scanner sc = new Scanner(System.in);
         System.out.println("Realizar venta, escribir nombre cliente");
         String client = sc.nextLine();
 
-        // sale product until input name is not 0
         Amount totalAmount = new Amount(0.0);
         String name = "";
         Product[] soldProducts = new Product[10];
